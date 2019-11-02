@@ -1,1 +1,11 @@
-lib/libmere-utils
+lib/libmere-utils.so
+lib/libmere-utils.so.0
+lib/libmere-utils.so.0.0
+lib/libmere-utils.so.0.0.1b
+include/mere/mere-utils/merefileutils.h
+include/mere/mere-utils/merei18nutils.h
+include/mere/mere-utils/mereprocessutils.h
+include/mere/mere-utils/meresignal.h
+include/mere/mere-utils/merestringutils.h
+include/mere/mere-utils/mereutils.h
+include/mere/mere-utils/mereutilsglobal.h
