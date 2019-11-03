@@ -12,7 +12,7 @@ COMMENT= 	About me, mere!
 LICENSE=     	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core gui widgets \
 		buildtools_build linguisttools_build
 
@@ -24,5 +24,7 @@ GH_PROJECT=	mere-about
 GH_TAGNAME=	v0.0.1b
 
 #WRKSRC=         ${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+OPTIONS_DEFINE=INSTALL_AS_USER
 
 .include <bsd.port.mk>
