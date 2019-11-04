@@ -12,11 +12,11 @@ COMMENT=	Utility bundle for mere system interface
 LICENSE=     	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core \
 		buildtools_build
 
-#USE_GL+=	gl
+USE_XORG=	x11
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	merelab

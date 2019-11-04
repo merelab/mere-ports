@@ -2,6 +2,7 @@ lib/libmere-utils.so
 lib/libmere-utils.so.0
 lib/libmere-utils.so.0.0
 lib/libmere-utils.so.0.0.1b
+include/mere/mere-utils/mereapputils.h
 include/mere/mere-utils/merefileutils.h
 include/mere/mere-utils/merei18nutils.h
 include/mere/mere-utils/mereprocessutils.h
