@@ -1,3 +1,5 @@
+bin/mere-utils
+bin/mere-utils-tests
 lib/libmere-utils.so
 lib/libmere-utils.so.0
 lib/libmere-utils.so.0.0
