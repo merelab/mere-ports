@@ -1,15 +1,16 @@
 # $FreeBSD$
 
-PORTNAME=       mere-auth
+PORTNAME=	mere-auth
 PORTVERSION=	0.0.1b
 PORTREVISION=	1
-CATEGORIES=     security
-#MASTER_SITES=	https://ports.merelab.io/downlaods/mere-auth-${PORTVERSION}.tar.gz
+DISTVERSIONPREFIX=v
+CATEGORIES=	security
+#MASTER_SITES=https://ports.merelab.io/downlaods/mere-auth-${PORTVERSION}.tar.gz
 
-MAINTAINER=     bhuiyan.mohammad.iklash@gmail.com
-COMMENT= 	Auth library to be used for mere system interface
+MAINTAINER=	bhuiyan.mohammad.iklash@gmail.com
+COMMENT=	Auth library to be used for mere system interface
 
-LICENSE=     	BSD3CLAUSE
+LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libmere-utils.so:x11/mere-utils
@@ -20,9 +21,9 @@ USE_QT=		core \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	merelab
-GH_PROJECT=	mere-auth
-GH_TAGNAME=	v0.0.1b
+#GH_PROJECT=	mere-auth
+#GH_TAGNAME=	v0.0.1b
 
-#WRKSRC=         ${WRKDIR}/${PORTNAME}-${PORTVERSION}
+#WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 .include <bsd.port.mk>
