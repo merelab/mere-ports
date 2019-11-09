@@ -16,8 +16,6 @@ USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core \
 		buildtools_build
 
-#USE_XORG=	x11
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	merelab
 
