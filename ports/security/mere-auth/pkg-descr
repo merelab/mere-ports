@@ -1,5 +1,5 @@
 Auth library for mere system interface
-It's a library to expose simple api to the system that needs to check an user.
+A library to expose simple api for the auth-aware application to check an user.
 Current it support PAM authentication only.
 
 WWW: https://auth.merelab.io/

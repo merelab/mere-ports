@@ -1,4 +1,5 @@
 bin/mere-auth
+etc/pam.d/mere
 lib/libmere-auth.so
 lib/libmere-auth.so.0
 lib/libmere-auth.so.0.0
