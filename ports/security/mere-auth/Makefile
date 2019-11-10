@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	mere-auth
-PORTVERSION=	0.0.1b
 DISTVERSIONPREFIX=v
+DISTVERSION=	0.0.1b
 CATEGORIES=	security
 #MASTER_SITES=https://ports.merelab.io/downlaods/mere-auth-${PORTVERSION}.tar.gz
 
