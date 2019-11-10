@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	mere-utils
-PORTVERSION=	0.0.1b
 DISTVERSIONPREFIX=v
+DISTVERSION=	0.0.1b
 CATEGORIES=	x11
 #MASTER_SITES=	https://ports.merelab.io/downlaods/mere-utils-${PORTVERSION}.tar.gz
 
