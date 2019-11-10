@@ -2,7 +2,7 @@
 
 PORTNAME=	mere-auth
 DISTVERSIONPREFIX=v
-DISTVERSION=	0.0.1b
+DISTVERSION=	0.0.1_0b
 CATEGORIES=	security
 #MASTER_SITES=https://ports.merelab.io/downlaods/mere-auth-${PORTVERSION}.tar.gz
 
@@ -20,5 +20,6 @@ USE_QT=		core \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	merelab
+#GH_TAGNAME=	62b51e6
 
 .include <bsd.port.mk>
