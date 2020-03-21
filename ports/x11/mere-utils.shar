@@ -1,0 +1,85 @@
+# This is a shell archive.  Save it in a file, remove anything before
+# this line, and then unpack it by entering "sh file".  Note, it may
+# create directories; files and directories will be owned by you and
+# have default permissions.
+#
+# This archive contains:
+#
+#	mere-utils
+#	mere-utils/pkg-descr
+#	mere-utils/distinfo
+#	mere-utils/Makefile
+#	mere-utils/pkg-plist
+#
+echo c - mere-utils
+mkdir -p mere-utils > /dev/null 2>&1
+echo x - mere-utils/pkg-descr
+sed 's/^X//' >mere-utils/pkg-descr << '4352e6d410b5c50764063876619cb041'
+XUtility bundle for mere system interface
+XMere system interface utility contains all the helper funstion required for
+Xapplications of mere system interface.
+XCurrently it has following helpers and will grow over time:
+X- AppUtils
+X- FileUtils
+X- i18nUtils
+X- StringUtils
+X- ProcessUtils
+X- SignalUtils
+Xetc...
+X
+Xnote:
+Xmere system interface is an interface to your system, it will work like your
+Xtraditional desktop environment with easy to modify and configurable.
+X
+XWWW: http://utils.merelab.io/
+4352e6d410b5c50764063876619cb041
+echo x - mere-utils/distinfo
+sed 's/^X//' >mere-utils/distinfo << 'a1e6266703d8876eab563330df9990a3'
+XTIMESTAMP = 1573329916
+XSHA256 (merelab-mere-utils-v0.0.1b_GH0.tar.gz) = f1456852eb89bd08283d4725f95ddb8d988b66d65631a3f83856e85c1b84fd1c
+XSIZE (merelab-mere-utils-v0.0.1b_GH0.tar.gz) = 5318
+a1e6266703d8876eab563330df9990a3
+echo x - mere-utils/Makefile
+sed 's/^X//' >mere-utils/Makefile << '9a6f0943ac0e8ba6a9729cc7f55cd54e'
+X# $FreeBSD$
+X
+XPORTNAME=	mere-utils
+XPORTVERSION=	0.0.1b
+XDISTVERSIONPREFIX=v
+XCATEGORIES=	x11
+X#MASTER_SITES=	https://ports.merelab.io/downlaods/mere-utils-${PORTVERSION}.tar.gz
+X
+XMAINTAINER=	bhuiyan.mohammad.iklash@gmail.com
+XCOMMENT=	Utility bundle for mere system interface
+X
+XLICENSE=	BSD3CLAUSE
+XLICENSE_FILE=	${WRKSRC}/COPYING
+X
+XUSES=		compiler:c++11-lang qmake qt:5
+XUSE_QT=		core \
+X		buildtools_build
+X
+XUSE_GITHUB=	yes
+XGH_ACCOUNT=	merelab
+X
+X.include <bsd.port.mk>
+9a6f0943ac0e8ba6a9729cc7f55cd54e
+echo x - mere-utils/pkg-plist
+sed 's/^X//' >mere-utils/pkg-plist << '90bb4105fd42d35ee42dee9ae6df9815'
+Xbin/mere-utils
+Xbin/mere-utils-tests
+Xlib/libmere-utils.so
+Xlib/libmere-utils.so.0
+Xlib/libmere-utils.so.0.0
+Xlib/libmere-utils.so.0.0.1b
+Xinclude/mere/utils/mereapputils.h
+Xinclude/mere/utils/merefileutils.h
+Xinclude/mere/utils/merei18nutils.h
+Xinclude/mere/utils/mereprocessutils.h
+Xinclude/mere/utils/meresignal.h
+Xinclude/mere/utils/merestringutils.h
+Xinclude/mere/utils/mereutils.h
+Xinclude/mere/utils/mereutilsglobal.h
+90bb4105fd42d35ee42dee9ae6df9815
+exit
+

@@ -1,0 +1,4 @@
+Object database for mere system interface
+Simple library built on leveldb to store any obejct inherited from MereStoreUnit
+
+WWW: http://store.merelab.io/

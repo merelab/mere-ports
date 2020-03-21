@@ -1,0 +1,72 @@
+# This is a shell archive.  Save it in a file, remove anything before
+# this line, and then unpack it by entering "sh file".  Note, it may
+# create directories; files and directories will be owned by you and
+# have default permissions.
+#
+# This archive contains:
+#
+#	mere-auth
+#	mere-auth/distinfo
+#	mere-auth/Makefile
+#	mere-auth/pkg-descr
+#	mere-auth/pkg-plist
+#
+echo c - mere-auth
+mkdir -p mere-auth > /dev/null 2>&1
+echo x - mere-auth/distinfo
+sed 's/^X//' >mere-auth/distinfo << '43c0a9ffe12a6ce205d62c29d1627808'
+XTIMESTAMP = 1573329395
+XSHA256 (merelab-mere-auth-v0.0.1b_GH0.tar.gz) = 340994eae29a6ee54954abea368d2b42199dcba5a52cf105298aac3911e0b056
+XSIZE (merelab-mere-auth-v0.0.1b_GH0.tar.gz) = 11769
+43c0a9ffe12a6ce205d62c29d1627808
+echo x - mere-auth/Makefile
+sed 's/^X//' >mere-auth/Makefile << '2bb64c3e169ef748cf65173434102037'
+X# $FreeBSD$
+X
+XPORTNAME=	mere-auth
+XPORTVERSION=	0.0.1b
+XDISTVERSIONPREFIX=v
+XCATEGORIES=	security
+X#MASTER_SITES=https://ports.merelab.io/downlaods/mere-auth-${PORTVERSION}.tar.gz
+X
+XMAINTAINER=	bhuiyan.mohammad.iklash@gmail.com
+XCOMMENT=	Auth library to be used for mere system interface
+X
+XLICENSE=	BSD3CLAUSE
+XLICENSE_FILE=	${WRKSRC}/COPYING
+X
+XLIB_DEPENDS=	libmere-utils.so:x11/mere-utils
+X
+XUSES=		compiler:c++11-lang qmake qt:5
+XUSE_QT=		core \
+X		buildtools_build
+X
+XUSE_GITHUB=	yes
+XGH_ACCOUNT=	merelab
+X
+X.include <bsd.port.mk>
+2bb64c3e169ef748cf65173434102037
+echo x - mere-auth/pkg-descr
+sed 's/^X//' >mere-auth/pkg-descr << 'e038fd08d306123c47aa683eb488965f'
+XAuth library for mere system interface
+XA library to expose simple api for the auth-aware application to check an user.
+XCurrent it support PAM authentication only.
+X
+XWWW: https://auth.merelab.io/
+e038fd08d306123c47aa683eb488965f
+echo x - mere-auth/pkg-plist
+sed 's/^X//' >mere-auth/pkg-plist << 'e520f943acf38c29469e0b97ff444fcb'
+Xbin/mere-auth
+Xetc/pam.d/mere
+Xlib/libmere-auth.so
+Xlib/libmere-auth.so.0
+Xlib/libmere-auth.so.0.0
+Xlib/libmere-auth.so.0.0.1b
+Xinclude/mere/auth/mereauth.h
+Xinclude/mere/auth/mereaccount.h
+Xinclude/mere/auth/mereauthglobal.h
+Xinclude/mere/auth/mereapplicant.h
+Xinclude/mere/auth/pam/merepam.h
+e520f943acf38c29469e0b97ff444fcb
+exit
+

@@ -1,0 +1,65 @@
+# This is a shell archive.  Save it in a file, remove anything before
+# this line, and then unpack it by entering "sh file".  Note, it may
+# create directories; files and directories will be owned by you and
+# have default permissions.
+#
+# This archive contains:
+#
+#	mere-about
+#	mere-about/pkg-plist
+#	mere-about/distinfo
+#	mere-about/Makefile
+#	mere-about/pkg-descr
+#
+echo c - mere-about
+mkdir -p mere-about > /dev/null 2>&1
+echo x - mere-about/pkg-plist
+sed 's/^X//' >mere-about/pkg-plist << '739670ec1e5329006fc7ded7d3ed340c'
+Xbin/mere-about
+Xshare/applications/mere-about.desktop
+Xshare/mere/mere-about/i18n/mere-about_bn.qm
+Xshare/mere/mere-about/i18n/mere-about_en.qm
+739670ec1e5329006fc7ded7d3ed340c
+echo x - mere-about/distinfo
+sed 's/^X//' >mere-about/distinfo << '669b4164c851fcc37280eef6482a1397'
+XTIMESTAMP = 1573331230
+XSHA256 (merelab-mere-about-v0.0.1b_GH0.tar.gz) = a1c6e7da2e94a91769cd249f0a3a02dc35541ba3ac5c05da418a81fb6d6ffca7
+XSIZE (merelab-mere-about-v0.0.1b_GH0.tar.gz) = 38648
+669b4164c851fcc37280eef6482a1397
+echo x - mere-about/Makefile
+sed 's/^X//' >mere-about/Makefile << '16c8a7cbcb0b00f7760ee738385eec32'
+X# $FreeBSD$
+X
+XPORTNAME=	mere-about
+XPORTVERSION=	0.0.1b
+XDISTVERSIONPREFIX=v
+XCATEGORIES=	x11
+X#MASTER_SITES=	https://ports.merelab.io/downlaods/mere-about-${PORTVERSION}.tar.gz
+X
+XMAINTAINER=	bhuiyan.mohammad.iklash@gmail.com
+XCOMMENT=	About me, mere!
+X
+XLICENSE=	BSD3CLAUSE
+XLICENSE_FILE=	${WRKSRC}/COPYING
+X
+XUSES=		compiler:c++11-lang qmake qt:5
+XUSE_QT=		core gui widgets \
+X		buildtools_build linguisttools_build
+X
+XUSE_GL+=	gl
+X
+XUSE_GITHUB=	yes
+XGH_ACCOUNT=	merelab
+X
+X.include <bsd.port.mk>
+16c8a7cbcb0b00f7760ee738385eec32
+echo x - mere-about/pkg-descr
+sed 's/^X//' >mere-about/pkg-descr << '6b4f1e0af18ec9d287d7d5465575c638'
+XAbout me, mere!
+XIt's a very simple and tiny application that provides its' user information
+Xabout the mere software suite, and the system it is running on.
+X
+XWWW: http://about.merelab.io/
+6b4f1e0af18ec9d287d7d5465575c638
+exit
+
