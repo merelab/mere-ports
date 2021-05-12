@@ -1,13 +1,24 @@
-Utility bundle for mere system interface
-Mere system interface utility contains all the helper funstion required for
-applications of mere system interface.
+Utility bundle for mere system interface 
+An simple utility library contains common reusable functionality of components 
+that are used in mere projects.
 Currently it has following helpers and will grow over time:
 - AppUtils
+- EnvUtils
+- BinUtils
 - FileUtils
-- i18nUtils
-- StringUtils
+- FolderUtls
+- i18Utils
+- IconUtils
+- PathUtils
 - ProcessUtils
 - SignalUtils
+- StringUtils
 etc...
+
+Note:
+mere system interface is an interface to your system, it will work like your
+traditional desktop environment with easy to modify and configure. We will
+initially create ports for utility applications then step by step rest of 
+the system.
 
 WWW: https://github.com/merelabs/mere-utils 
