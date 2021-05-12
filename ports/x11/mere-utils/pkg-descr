@@ -10,8 +10,4 @@ Currently it has following helpers and will grow over time:
 - SignalUtils
 etc...
 
-note:
-mere system interface is an interface to your system, it will work like your
-traditional desktop environment with easy to modify and configurable.
-
-WWW: http://utils.merelab.io/
+WWW: https://github.com/merelabs/mere-utils 
