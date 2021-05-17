@@ -1,0 +1,9 @@
+Simple library for parsing configuration files 
+A lightweight configuration library for applications that do not need a heavy-
+weight configuration management system.
+
+Currently it has support for parsing following formats: 
+- key-value paired configuration 
+- groupped key-value paired configiration 
+
+WWW: https://github.com/merelabs/mere-config-lite 
